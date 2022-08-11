@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Delivery Service</title>
   <link
-    href="https://fonts.googleapis.com/css?family=Alegreya|Source+Sans+Pro&display=swap"
-    rel="stylesheet"
+    rel="icon"
+    href="https://assets-global.website-files.com/5d03b4e130118314af624b20/5ff746968ef71d4c780bf4a6_favicon_core.png"
+    type="image/x-icon"
   />
-  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="./styles/navbar.css" />
 </head>
 <html>
   <body>
-    <h1>Lorem Ipsum generator</h1>
-    <p>How many paragraphs do you want to generate?</p>
-    <input type="number" id="quantity" min="1" max="20" value="1" />
-    <button id="generate">Generate</button>
-    <button id="copy">Copy!</button>
-    <div id="lorem"></div>
-    <script type="text/javascript" src="script.js"></script>
+    <div id="navbar-container">
+      <div id="pre-nav">
+        <div id="pre-nav-left">
+          <a href="index.html">
+            <img
+              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+              alt="pre-nav-icon"
+              id="pre-nav-icon-1"
+            />
+          </a>
+        </div>
+        <div id="pre-nav-right">
+          <a href="index.html">
+            <img
+              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg"
+              alt="pre-nav-icon"
+              id="pre-nav-icon-2"
+            />
+          </a>
+        </div>
+      </div>
+      <div id="nav-container">
+        <div id="nav-logo">
+          <a href="index.html">
+            <img
+              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+              alt="nav-branding"
+              id="branding-logo"
+            />
+          </a>
+        </div>
+        <div id="nav-links">
+          <a href="#">Plans & Menu</a>
+          <a href="#">How It Works</a>
+          <a href="#">Gifts</a>
+          <a href="#">Refer a friend</a>
+          <a href="#">Help</a>
+        </div>
+        <div id="nav-buttons">
+          <div id="login">
+            <a href="login.html">Login</a>
+          </div>
+
+          <div id="signup">
+            <a href="signup.html">
+              <button id="signup-btn">Sign Up</button>
+            </a>
+          </div>
+        </div>
+        <div id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+
+<script src="./scripts/navbar.js"></script>

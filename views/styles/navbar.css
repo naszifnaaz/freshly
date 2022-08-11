@@ -1,0 +1,148 @@
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Favoritfreshly, sans-serif;
+  font-weight: 400;
+}
+
+#pre-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 0 0;
+}
+
+#pre-nav-icon-1 {
+  height: 0.8rem;
+  margin-right: 1.5rem;
+}
+
+#pre-nav-icon-2 {
+  height: 0.8rem;
+  filter: grayscale();
+}
+
+#nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: rgb(255, 253, 247);
+  padding: 1.2rem;
+  position: sticky;
+}
+
+#nav-container a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-logo {
+  width: 150px;
+}
+
+#nav-links a {
+  margin-right: 1rem;
+}
+
+#nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+#nav-buttons > * {
+  margin-right: 1rem;
+}
+
+#signup-btn {
+  background-color: rgb(49, 103, 255);
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgb(49, 103, 255);
+  padding: 12px 15px;
+  font-size: 1em;
+  margin-top: -8px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+#signup-btn:hover {
+  transform: translateX(2px) translateY(-2px);
+  transition: transform 0.4s;
+}
+
+#hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+#hamburger-icon {
+  width: 25px;
+  height: auto;
+}
+
+#hamburger-icon:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+  #nav-buttons {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #nav-container {
+    justify-content: space-between;
+  }
+
+  #nav-links {
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 253, 247);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  #nav-links > * {
+    margin: 10px;
+  }
+
+  #nav-links.active {
+    left: 0;
+  }
+}
