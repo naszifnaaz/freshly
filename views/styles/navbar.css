@@ -10,6 +10,10 @@ body {
   font-weight: 400;
 }
 
+#navbar-container {
+  display: unset;
+}
+
 #pre-nav {
   display: flex;
   align-items: center;
@@ -36,6 +40,7 @@ body {
   background-color: rgb(255, 253, 247);
   padding: 1.2rem;
   position: sticky;
+  top: 0;
 }
 
 #nav-container a {
@@ -137,6 +142,8 @@ body {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: 999;
+    padding: 1rem 0;
   }
   #nav-links > * {
     margin: 10px;
