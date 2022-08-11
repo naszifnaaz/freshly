@@ -1,0 +1,28 @@
+{
+  "name": "freshly",
+  "version": "1.0.0",
+  "description": "Freshly is a New York-based prepared meal delivery company that delivers throughout the United States. This is a clone of the website created using MERN stack.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naszifnaaz/freshly.git"
+  },
+  "author": "Muhammed Nasif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naszifnaaz/freshly/issues"
+  },
+  "homepage": "https://github.com/naszifnaaz/freshly#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
