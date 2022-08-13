@@ -12,6 +12,7 @@ body {
 
 #navbar-container {
   display: unset;
+  width: 100vw;
 }
 
 #pre-nav {

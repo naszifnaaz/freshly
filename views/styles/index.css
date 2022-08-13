@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Favoritfreshly, sans-serif;
 }
@@ -17,6 +21,7 @@ body {
   height: 55vh;
   display: flex;
   position: relative;
+  z-index: -999;
 }
 
 .section1-left-desc {
@@ -293,6 +298,13 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  body {
+    width: 100vw;
+  }
+
+  #section1 {
+    height: fit-content;
+  }
   #section1-left {
     display: none;
   }
@@ -335,5 +347,9 @@ body {
 
   .section4-2-desc {
     width: fit-content;
+  }
+
+  #footer-container {
+    display: none;
   }
 }
