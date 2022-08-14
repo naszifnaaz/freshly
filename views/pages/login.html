@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Delivery Service</title>
+    <link
+      rel="icon"
+      href="https://assets-global.website-files.com/5d03b4e130118314af624b20/5ff746968ef71d4c780bf4a6_favicon_core.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <div id="navbar-container">
+      <div id="pre-nav">
+        <div id="pre-nav-left">
+          <a href="index.html">
+            <img
+              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+              alt="pre-nav-icon"
+              id="pre-nav-icon-1"
+            />
+          </a>
+        </div>
+        <div id="pre-nav-right">
+          <a href="index.html">
+            <img
+              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5f7b2e54745410836cfa3955_bizlogo_main-07.svg"
+              alt="pre-nav-icon"
+              id="pre-nav-icon-2"
+            />
+          </a>
+        </div>
+      </div>
+      <div id="nav-container">
+        <div id="nav-logo">
+          <a href="index.html">
+            <img
+              src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+              alt="nav-branding"
+              id="branding-logo"
+            />
+          </a>
+        </div>
+        <div id="nav-links">
+          <a href="#section4">Plans & Menu</a>
+          <a href="#">How It Works</a>
+          <a href="#">Gifts</a>
+          <a href="#">Refer a friend</a>
+          <a href="#">Help</a>
+        </div>
+        <div id="nav-buttons">
+          <div id="login">
+            <a href="login.html">Login</a>
+          </div>
+
+          <div id="signup">
+            <a href="signup.html">
+              <button id="signup-btn">Sign Up</button>
+            </a>
+          </div>
+        </div>
+        <div id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar Ends -->
+
+    <!-- Login Container -->
+    <div id="login-container">
+      <div class="login-title">Log In</div>
+      <div class="login-form">
+        <div class="login-email">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@domain.com"
+          />
+        </div>
+
+        <div class="login-password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="enter password"
+          />
+        </div>
+      </div>
+
+      <div class="login-btn">
+        <button class="login-btn-1">Log In</button>
+      </div>
+
+      <div class="forgot-credentials">
+        <p class="forgot link-italic">Forgot Password ?</p>
+        <p class="no-account">
+          Don’t have an account?
+          <span class="link-italic"
+            ><a href="../pages/signup.html">Get Started</a></span
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+  </body>
+</html>
+
+<script type="module">
+  import footer from "../scripts/footer.js";
+  let footerContainer = document.getElementById("footer-container");
+  footerContainer.innerHTML = footer();
+</script>
