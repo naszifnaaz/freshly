@@ -11,8 +11,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/login.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/signup.css" />
   </head>
   <body>
     <!-- Navbar Starts -->
@@ -74,54 +73,36 @@
     </div>
     <!-- Navbar Ends -->
 
-    <!-- Login Container -->
-    <div id="login-container">
-      <div class="login-title">Log In</div>
-      <div class="login-form">
-        <div class="login-email">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@domain.com"
-          />
+    <!-- Signup Container -->
+    <div id="signup-container">
+      <div class="signup-contain">
+        <div class="signup-1">Dinner's ready!</div>
+        <div class="signup-2">
+          Chef-prepared, healthy meals delivered weekly
         </div>
-
-        <div class="login-password">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="enter password"
-          />
+        <div class="signup-form">
+          <input type="email" id="signup-email" placeholder="Email" />
+          <input type="text" placeholder="Zip" maxlength="5" id="signup-zip" />
+          <button class="signup-btn">Continue</button>
         </div>
-      </div>
-
-      <div class="login-btn">
-        <button class="login-btn-1">Log In</button>
-      </div>
-
-      <div class="forgot-credentials">
-        <p class="forgot link-italic">Forgot Password ?</p>
-        <p class="no-account">
-          Don’t have an account?
-          <span class="link-italic"
-            ><a href="../pages/signup.html">Get Started</a></span
-          >
-        </p>
+        <div class="signup-desc">
+          <p>
+            Already have an account? <span class="italic-style">Log in</span>
+          </p>
+          <p>
+            By continuing, you agree to our
+            <span class="italic-style">Terms</span> and
+            <span class="italic-style">Privacy Policy</span> & will receive
+            emails from Freshly.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div id="footer-container"></div>
+    <div class="common-questions">
+      <img src="../assets/common-questions.PNG" alt="" id="faq" />
+    </div>
   </body>
 </html>
 
 <script src="../scripts/navbar.js"></script>
-<script type="module">
-  import footer from "../scripts/footer.js";
-  let footerContainer = document.getElementById("footer-container");
-  footerContainer.innerHTML = footer();
-</script>

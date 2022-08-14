@@ -1,0 +1,139 @@
+#signup-container {
+  background: url("https://res.cloudinary.com/freshly/image/upload/c_crop,g_auto,dpr_auto,q_30,w_1500,h_900/v1494958610/joinnow-southchicken.jpg");
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.signup-contain {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+}
+
+.signup-1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.signup-2 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 0 2rem 1rem 2rem;
+  color: rgb(37, 35, 35);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+#signup-email {
+  padding: 12px 24px;
+  margin-left: 2rem;
+  width: 45%;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+#signup-zip {
+  margin-right: 1rem;
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  width: 20%;
+}
+
+.signup-btn {
+  background-color: rgb(49, 103, 255);
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgb(49, 103, 255);
+  font-size: 1.3em;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  width: 22%;
+}
+
+.signup-btn:hover {
+  transform: translateX(2px) translateY(-2px);
+  transition: transform 0.4s;
+}
+
+.signup-desc {
+  margin: 2rem;
+}
+
+.signup-desc * {
+  margin-bottom: 10px;
+}
+
+.italic-style {
+  color: rgb(49, 103, 255);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.common-questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 253, 247);
+  height: 60;
+}
+
+#faq {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .signup-form {
+    flex-direction: column;
+  }
+
+  #signup-zip,
+  .signup-btn {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  #signup-email {
+    width: 80%;
+  }
+
+  #signup-zip {
+    width: 60%;
+  }
+
+  .signup-btn {
+    height: 50px;
+    width: 100px;
+  }
+
+  .signup-contain {
+    width: 80%;
+  }
+
+  .signup-1 {
+    font-size: 1.5rem;
+  }
+
+  .signup-2 {
+    font-size: 1rem;
+  }
+
+  .signup-desc {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+}
