@@ -41,6 +41,7 @@ body {
   margin: auto auto;
   height: 80vh;
   margin-top: 3rem;
+  height: fit-content;
 }
 
 .plan-title {
