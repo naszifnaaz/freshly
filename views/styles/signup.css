@@ -81,6 +81,7 @@
   color: rgb(49, 103, 255);
   font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .common-questions {
