@@ -7,3 +7,8 @@ let viewPlansButton = document.querySelector('.view-plans-btn');
 viewPlansButton.addEventListener("click", function () {
     window.location.href = "./index.html#section4"
 })
+
+let getStartedButton = document.getElementById('getstarted');
+getStartedButton.addEventListener("click", function () {
+    window.location.href = "./pages/signup.html"
+})

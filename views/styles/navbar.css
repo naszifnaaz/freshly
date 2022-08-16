@@ -107,7 +107,14 @@ body {
   transform: scale(1.1);
 }
 
+.mobile-only-navlinks {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
+  .mobile-only-navlinks {
+    display: block;
+  }
   #nav-buttons {
     display: none;
   }
