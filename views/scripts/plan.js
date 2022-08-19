@@ -1,4 +1,11 @@
+// Plan page Scripts
+
 let columns = document.querySelectorAll("#column");
+
+let continueButton = document.querySelector(".continue-btn");
+continueButton.addEventListener("click", () => {
+    window.location.href = "days.html";
+})
 
 columns.forEach(item => {
     item.addEventListener("click", () => {
@@ -6,6 +13,3 @@ columns.forEach(item => {
     });
 });
 
-document.querySelector("#planBtn").addEventListener("click", () => {
-    window.location.href = "day.html";
-});
