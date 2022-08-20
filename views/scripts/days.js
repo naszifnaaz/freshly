@@ -1,6 +1,7 @@
 //Getting recent dates for order
 
 let date_container = document.querySelector("#dateBox");
+let delivery = document.getElementById("date");
 let today = new Date();
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -41,6 +42,14 @@ for (let i = 0; i < 14; i++) {
         day_index = 0;
     else
         day_index++;
+
+    div.addEventListener("click", function () {
+        div.style.backgroundColor = "#fffad1"
+        div.style.borderLeft = "5px solid blue"
+        date.innerHTML = div.innerHTML;
+
+
+    })
 
     date_container.append(div);
 }

@@ -134,6 +134,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 3rem 0;
 }
 
 .section3-3-img {
